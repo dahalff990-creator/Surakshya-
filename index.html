@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>LOVE FOREVER💝💞</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+
+<audio id="bgMusic" autoplay loop muted>
+    <source src="./song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+    <span class="comments">/**</span><br />
+	<span class="space"/><span class="comments"> * Please Click on empty screen to play song 🎧 *</span><br/>
+    <span class="space"/><span class="comments"> * // THE UNTOLD SCRIPT OF My 💕</span>
+    <span class="space"/><span class="comments"> *//</span><br />
+	
+    Hey Surakshya 💖,<br />
+    Do you remember the first time we met in Free Fire? 🌟<br />
+    <span class="comments">// A random lobby that quietly changed everything</span><br />
+    That day something in me shifted — I didn’t plan it, it just came from the heart.<br />
+    <span class="comments">// Then Instagram made it real</span><br />
+    When we connected there, I realised this wasn’t just liking someone…  it felt deeper — like my heart already knew you.<br />
+    <br />
+    I don’t have a list of reasons — I love you without needing one.<br />
+    I don’t want “someone”… I want *you* the person my heart chose quietly.<br />
+    Not for looks, not for convenience,<br />
+    but because with you it feels like peace... like home.<br />
+    <br />
+    <span class="comments">// I am not asking for a reply or a yes right now</span><br />
+    I won’t push you or rush you — I just wanted you to know the truth once, clearly.<br />
+    If someday your heart ever moves toward me,<br />
+    I’ll still be here… silently.<br />
+    <span class="comments">// And if it never does — I’ll still be grateful I got to love you this purely</span><br />
+    <br />
+    Some feelings don’t demand — they simply exist. 💫<br />
+    <br />
+    If you ever feel me in your heart,<br />
+    you can touch the heart below..<br />
+    <br />
+    <span id="heartspan">
+        <a href=""><i class="fas fa-heart" id="icon"></i></a>
+    </span>
+</div>
+
+	<div id="loveHeart">
+    <canvas id="garden"></canvas>
+    <div id="words">
+        <div id="messages">
+            SOME FEELINGS NEED NO LOUD VOICE,
+            THEY JUST LIVE IN THE HEART 💕🌹
+            <div id="elapseClock"></div>
+        </div>
+
+		 <div id="loveu">
+            even if I'm unheard,
+            I still care, quietly…<br/>
+            <div class="signature">— Surakshya 💗</div>
+        </div>
+	   
+    </div>
+</div>
+
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2025, 8, 17);
+together.setHours(12);
+together.setMinutes(60);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+    var msg = document.createElement("div");
+    msg.id = "errorMsg";
+    msg.innerHTML = "Your browser doesn't support HTML5!";
+    document.body.appendChild(msg);
+    $("#code").css("display", "none")
+    document.execCommand("stop");
+} else {
+    setTimeout(function () {
+        startHeartAnimation();
+    }, 5000);
+
+    timeElapse(together);
+    setInterval(function () {
+        timeElapse(together);
+    }, 500);
+
+    adjustCodePosition();
+    $("#code").typewriter();
+}
+
+// --- AUDIO FIX FOR MOBILE ---
+document.addEventListener('click', unmuteAudio, { once: true });
+document.addEventListener('touchstart', unmuteAudio, { once: true });
+
+function unmuteAudio() {
+    var audio = document.getElementById('bgMusic');
+    audio.muted = false;
+    audio.volume = 0.5;
+    audio.play().catch(function(){});
+}
+</script>
+
+
+
+</body>
+</html>
